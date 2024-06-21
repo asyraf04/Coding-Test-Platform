@@ -1,9 +1,0 @@
-#!/bin/bash
-response=$(curl -s http://127.0.0.1:8000/new)
-id=$(echo $response | jq -r '.id')
-username=$(echo $response | jq -r '.username')
-code=$(echo $response | jq -r '.code')
-
-if [ "$id" != "null" ]; then
-    echo -e "$code" > /home/asyraf04/Documents/code/$id.py
-fi
