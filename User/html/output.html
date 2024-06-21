@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <link rel="stylesheet" href="../css/style.css">  <!--NOTE CSS 연동-->
+    <link rel="icon" href="../src/svg/arrow-down-square-svgrepo-com.svg" type="image/x-icon">
+</head>
+<body>
+    <form id="codesubmit">      <!--TODO call API POST request, action link change-->
+        <fieldset>
+            <legend><h2>Code Result</h2></legend>
+            <lable><h3>Username</h3></lable>
+            <input id="username" class="kmg"></inp>
+            <lable><h3>Password</h3></lable>
+            <input id="password" type="password" class="kmg"></input>
+            <lable><h3>ID</h3></lable>
+            <input id="user_id" class="kmg"></inp>
+            <lable><h3 onclick="click_check()">Check</h3></lable>
+            <textarea id="check" spellcheck="false" readonly></textarea>
+        </fieldset>
+    </form>
+    <script src="../js/output.js"></script>
+</body>
+</html>
